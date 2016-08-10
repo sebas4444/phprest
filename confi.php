@@ -1,3 +1,3 @@
 <?php
-$conn = mysql_connect("localhost", "sebas4444", "");
-mysql_select_db('c9', $conn);
+$conn = mysql_connect("127.4.98.2:3306", "adminDWEBpue", "a5mm6w6LfKJP");
+mysql_select_db('phprest', $conn);

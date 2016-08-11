@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
  $status = isset($_POST['status']) ? mysql_real_escape_string($_POST['status']) : "";
  
  // Insert data into data base
- $sql = "INSERT INTO `tuts_rest`.`users` (`ID`, `name`, `email`, `password`, `status`) VALUES (NULL, '$name', '$email', '$password', '$status');";
+ $sql = "INSERT INTO `phprest`.`users` (`ID`, `name`, `email`, `password`, `status`) VALUES (NULL, '$name', '$email', '$password', '$status');";
  $qur = mysql_query($sql);
  if($qur){
  $json = array("status" => 1, "msg" => "Done User added!");
